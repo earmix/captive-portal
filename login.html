@@ -58,13 +58,17 @@
 	                            <input type="hidden" name="dst" value="$(link-orig)" />
 	                            <input type="hidden" name="popup" value="true" />
 	                            <div class="s-login">
-	                            	<div class="logo text-center p py-3 d-lg-none d-md-none d-block">
+	                            	<div class="logo text-center d-lg-none d-md-none d-block">
 	                            		<a href="https://www.ubaguio.edu/" target="_blank">
-											<img src="assets/img/logo512.png" class="mb-5" height="192" width="192">
+											<img src="assets/img/logo512.png" class="mb-5" height="160" width="160">
 										</a>
 	                            	</div>
 									<h3>Login</h3>
 									<p>Please enter your username and password</p>
+<!-- <p class="text-right">
+	<small>***Need an account? Claim your account at the MIS Office,<br> F Building, 4th
+		Floor, Room 403.</small>
+</p> -->
 									$(if error)
 	                                <div class="alert alert-danger">
 	                                  <strong>Error!</strong> $(error).
@@ -80,10 +84,9 @@
 								<div class="form-group">
 									<button type="submit" class="btn btn-primary btn-block">Login</button>
 								</div>
-
 	                            $(if trial == 'yes')
 									<!-- <a href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)" class="btn btn-logout text-space">COBA GRATIS</a> -->
-	                            $(endif)
+															$(endif)
 								<p class="text-center">
 									<small>UB Student WiFi &copy; 2019 MIS [ear.m]
 										<br>University of Baguio</small>
